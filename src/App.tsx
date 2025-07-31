@@ -1,10 +1,14 @@
+import {Header} from "./components/Header"
+import {Footer} from "./components/Footer"
+
 function App() {
   return (
     <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
       {/* Header ด้านบน */}
-      <header className="text-white bg-primary p-2 w-100">
+      {/* <header className="text-white bg-primary p-2 w-100">
         <h4>Note App</h4>
-      </header>
+      </header> */}
+      <Header></Header>
 
       <div className="d-flex flex-grow-1">
         {/* Sidebar ด้านซ้าย */}
@@ -42,6 +46,7 @@ function App() {
             <div className="m-2 p-2">
               <form className="row">
                 <div className="col-10">
+                  <h2>Chaichan Chaisak</h2>
                   <input
                     className="form-control"
                     type="text"
@@ -115,9 +120,10 @@ function App() {
       </div>
 
       {/* Footer ด้านล่าง */}
-      <footer className="text-secondary text-center p-2 bg-light mt-auto">
+      {/* <footer className="text-secondary text-center p-2 bg-light mt-auto">
         Copyright © 2026 chanadda thanyaratthanon 67062039
-      </footer>
+      </footer> */}
+      <Footer year = "2026" fullName = "Chaichan Chaisak" studentId = "670610682" ></Footer>
     </div>
   );
 }
